@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.asus.appoitment">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Menu" />
-        <activity android:name=".Schedule" />
-        <activity android:name=".Appointment"></activity>
+        <activity android:name=".Schedule"
+            android:parentActivityName=".Menu"/>
+        <activity android:name=".Appointment"
+            android:parentActivityName=".Menu"/>
+        <activity android:name=".Information"
+            android:parentActivityName=".Appointment"/>
     </application>
 
 </manifest>

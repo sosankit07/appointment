@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5e5a5a">
+
+    <TextView
+        android:id="@+id/infoaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Do you want to Accept the appointment?"
+        android:textColor="#ffff"/>
+
+    <Button
+        android:id="@+id/yesaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/infoaccept"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="122dp"
+        android:text="YES" />
+
+    <Button
+        android:id="@+id/noaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/infoaccept"
+        android:layout_alignTop="@+id/yesaccept"
+        android:text="NO" />
+</RelativeLayout>

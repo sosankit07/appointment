@@ -42,6 +42,7 @@
         android:layout_marginTop="73dp"
         android:text="@string/login"
         android:textSize="30sp"
+        android:visibility="gone"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="72dp" />
